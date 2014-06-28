@@ -136,7 +136,7 @@ Muncher.prototype.run = function() {
                 map["class"].push(key);
             }
 
-            fs.writeFileSync(this.mapFile, JSON.stringify(map, null, '\t'));
+            fs.writeFileSync(this.mapFile, JSON.stringify(this.map, null, '\t'));
         }
 
         this.echo('-------------------------------');
